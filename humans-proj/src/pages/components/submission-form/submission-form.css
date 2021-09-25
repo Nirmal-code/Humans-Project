@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+
+#intro {
+    margin-top: 0;
+    margin-bottom: 3vh;
+
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+
+    color: #FFFFFF;
+}
+
+#submission {
+    align-content: flex-start;
+    /* border: solid; */
+    left: 8.5vw;
+    display: block;
+    position: absolute;
+    text-align: left;
+    width: 83vw;
+    margin: 0 auto;
+    top: 11.6vh;
+    margin-bottom: 0;
+}
+
+label {
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22.5px;
+    line-height: 30px;
+    /* identical to box height */
+    padding: 0px 20px;
+
+    color: #FFFFFF;
+}
+
+input {
+    width: 26.38vw;
+    height: 4vh;
+
+    background: rgba(255, 255, 255, 0.17);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 33px;
+    margin-bottom: 3vh;
+}
+
+#can-contact-checkbox {
+    margin: auto;
+    background: rgba(255, 255, 255, 0.21);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+button {
+    height: 4.82vh;
+    width: 10.74vw;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 33px;
+
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+img {
+    float: right;
+}
