@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import './submission-form.css';
 
-class SubmissionForm extends Component {
+export default class SubmissionForm extends Component {
     constructor(props) {
         super()
         this.state = {
             firstName: "",
             lastName: "",
             email: "",
-            descripton: "",
+            description: "",
             canContact: false
         }
 
@@ -27,67 +27,79 @@ class SubmissionForm extends Component {
             })
     }
 
+    dontEnter(e) { e.preventDefault(); }
+
     render() {
         return (
             <div id="submission">
                 <p id="intro">{this.props.intro}</p>
 
-                <form id="text-fields">
+                <form id="text-fields" onSubmit={this.dontEnter}>
+
+                    <div id="side-image" style={{ float: "right" }}>
+                        <div id="spinner"></div>
+                        <img
+                            id="picture"
+                            src={this.props.image}
+                            alt="women-diversity"
+                        />
+                        <div id="caption-border">
+                            <figcaption id="caption">humans.</figcaption>
+                        </div>
+                    </div>
+
                     <label>First Name</label>
-                    <br style={{ lineHeight: "1" }} />
-                    <input
+                    <br style={{ lineHeight: "2" }} />
+                    <textarea
                         name="firstName"
                         value={this.state.firstName}
                         onChange={this.handleChange}
                     />
-                    <br style={{ lineHeight: "4" }} />
+                    <br style={{ lineHeight: "2" }} />
 
                     <label>Last Name</label>
                     <br style={{ lineHeight: "2" }} />
-                    <input
+                    <textarea
                         name="lastName"
                         value={this.state.lastName}
                         onChange={this.handleChange}
                     />
-                    <br style={{ lineHeight: "4" }} />
+                    <br style={{ lineHeight: "2" }} />
 
                     <label>Email</label>
                     <br style={{ lineHeight: "2" }} />
-                    <input
+                    <textarea
                         name="email"
                         value={this.state.email}
                         onChange={this.handleChange}
                     />
-                    <br style={{ lineHeight: "4" }} />
+                    <br style={{ lineHeight: "2" }} />
 
                     <label>Description</label>
                     <br style={{ lineHeight: "2" }} />
-                    <input
+                    <textarea
+                        id="description-text-input"
                         name="description"
                         value={this.state.descripton}
                         onChange={this.handleChange}
-                        style={this.descriptionStyle}
                     />
-                    <br style={{ lineHeight: "4" }} />
+                    <br style={{ lineHeight: "2" }} />
 
-                    <div style={{textAlign:"left"}}>
+                    <li style={{ listStyleType: "none" }}>
                         <input
                             type="checkbox"
                             id="can-contact-checkbox"
                             name="canContact"
                             onChange={this.handleChange}
                             checked={this.state.canContact}
-                        /> 
-                        <label style={{marginLeft:"-25.3vw"}}>I understand that this form is storing my submitted information so I can be contacted.</label>
-                    </div>
+                        />
+                        <label id="consent" for="can-contact-checkbox">I understand that this form is storing my submitted information so I can be contacted.</label>
+                    </li>
 
-
-                    <br style={{ lineHeight: "3" }} />
+                    <br style={{ lineHeight: "2" }} />
                     <button>SUBMIT</button>
                 </form>
             </div>
         )
     }
 }
-
-export default SubmissionForm;
