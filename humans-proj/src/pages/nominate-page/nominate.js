@@ -5,7 +5,7 @@ import photo from '../../../static/images/nominate-side-photo.jpg';
 
 export default function Nominate() {
     return (
-        <div>
+        <div id="nominate-page">
             <h1>Temporary Header</h1>
             <SubmissionForm
                 intro="Would you like to recommend yourself or someone you know to be featured on our website? Enter your name and information below, as well as a short description of the person or group you are recommending."
