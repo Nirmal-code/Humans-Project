@@ -36,8 +36,7 @@ export default class SubmissionForm extends Component {
 
                 <form id="text-fields" onSubmit={this.dontEnter}>
 
-                    <div id="side-image" style={{ float: "right" }}>
-                        <div id="spinner"></div>
+                    <div id="spinner" style={{ float: "right" }}>
                         <img
                             id="picture"
                             src={this.props.image}
