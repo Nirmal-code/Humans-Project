@@ -95,9 +95,7 @@ button {
 
 #spinner {
     border: #FFFFFF solid 2px;
-    position: absolute;
-    width: 30.1%;
-    height: 58.5%;
+    position: relative;
     -webkit-animation-name: spinner;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
