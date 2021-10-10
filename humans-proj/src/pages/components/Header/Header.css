@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+
+#header {
+    width:100vw;
+    height:10vh;
+    border: solid hidden;
+    font-family: Red Hat Display;
+    font-style: normal;
+    display: inline;
+}
+
+#hand-image {
+    object-fit: contain;
+    position: relative;
+    float: left;
+    height: 9vh;
+    width: 9vh;
+}
+
+h1 {
+    float: left;
+    font-weight: bold;
+    margin-left: 0.5vw;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+#header-link {
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    list-style-type: none;
+    display: inline;
+    margin-left: 10vw;
+    vertical-align: middle;
+}
+
+#links-bar {
+    margin-top: 3.5vh;
+    vertical-align: middle;
+}
