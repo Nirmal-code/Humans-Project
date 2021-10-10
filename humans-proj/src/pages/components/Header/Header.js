@@ -17,19 +17,19 @@ export default function Header() {
 
             <div id="links-bar">
                 <li id="header-link">
-                    <Link to="/nominate-page/nominate/">HOME</Link>
+                    <Link to="/home/Home/">HOME</Link>
                 </li>
                 <li id="header-link">
-                    <Link to="/nominate-page/nominate/">FEATURE</Link>
+                    <Link to="/feature-page/feature-page/">FEATURE</Link>
                 </li>
                 <li id="header-link">
-                    <Link to="/nominate-page/nominate/">ABOUT</Link>
+                    <Link to="/about-page/AboutPage/">ABOUT</Link>
                 </li> 
                 <li id="header-link">
                     <Link to="/nominate-page/nominate/">NOMINATE</Link>
                 </li>
                 <li id="header-link">
-                    <Link to="/nominate-page/nominate/" activeStyle={{color:"red"}}>CONTACT US</Link>
+                    <Link to="/contact-us/contact-us/" activeStyle={{color:"red"}}>CONTACT US</Link>
                 </li>
             </div>
         </div>
