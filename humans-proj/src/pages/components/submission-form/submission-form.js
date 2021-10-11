@@ -9,7 +9,15 @@ export default class SubmissionForm extends Component {
             lastName: "",
             email: "",
             description: "",
-            canContact: false
+            canContact: false,
+            errors: {
+                firstNameError: '',
+                lastNameError: '',
+                emailError: '',
+                descriptionError: '',
+                checkboxError: '',
+
+            }
         }
 
         this.handleChange = this.handleChange.bind(this)
@@ -25,7 +33,31 @@ export default class SubmissionForm extends Component {
             this.setState({
                 [name]: value
             })
-    }
+            let errors = this.state.errors;
+            switch(name){
+                case 'firstName':
+                    errors.firstNameError = value.length < 1 ? 'Please enter first name!':'';
+                    break;
+                case 'lastName':
+                    errors.lastNameError = value.length < 1 ? 'Please enter last name!':'';
+                    break;
+                case 'email':
+                    let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    errors.emailError = re.test(value) ? 'Please enter a valid email address' : '';
+                    break;
+                case 'description':
+                    errors.descriptionError = value.length < 1 ? 'Please enter description!':'';
+                    break;
+                default:
+                    break;
+    
+            }
+            this.setState({errors,[name]:value}, () => {
+                console.log(errors)
+            })
+            }
+        
+           
 
     dontEnter(e) { e.preventDefault(); }
 
