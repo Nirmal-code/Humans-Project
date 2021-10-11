@@ -22,7 +22,9 @@ export default class SubmissionForm extends Component {
 
         this.handleChange = this.handleChange.bind(this)
     }
-
+    onClickSubmit(){
+        console.log("Clicked")
+    }
     handleChange(event) {
         const { name, value, type, checked } = event.target
         type === "checkbox" ?
@@ -48,6 +50,9 @@ export default class SubmissionForm extends Component {
                 case 'description':
                     errors.descriptionError = value.length < 1 ? 'Please enter description!':'';
                     break;
+                    case 'canContact':
+                    errors.checkboxError = value ? '':'Please check checkbox!';
+                    break;
                 default:
                     break;
     
@@ -55,7 +60,7 @@ export default class SubmissionForm extends Component {
             this.setState({errors,[name]:value}, () => {
                 console.log(errors)
             })
-            }
+        }
         
            
 
@@ -128,7 +133,7 @@ export default class SubmissionForm extends Component {
                     </li>
 
                     <br style={{ lineHeight: "2" }} />
-                    <button>SUBMIT</button>
+                    <button onClick = {this.onClickSubmit}>SUBMIT</button>
                 </form>
             </div>
         )
