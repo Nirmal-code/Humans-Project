@@ -21,9 +21,16 @@ export default class SubmissionForm extends Component {
         }
 
         this.handleChange = this.handleChange.bind(this)
+        this.onClickSubmit = this.onClickSubmit.bind(this)
     }
     onClickSubmit(){
-        console.log("Clicked")
+        this.state.errors.firstNameError = this.state.firstName.length < 1 ? 'Please enter first name!':'';
+        this.state.errors.lastNameError = this.state.lastName.length < 1 ? 'Please enter last name!':'';
+        this.state.errors.checkboxError = this.state.canContact ? '':'Please check checkbox!';
+        let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        this.state.errors.emailError = re.test(this.state.email) ? '' : 'Please enter a valid email address';
+        this.state.errors.descriptionError = this.state.description.length < 1 ? 'Please enter description!':'';
+        console.log(this.state.errors)
     }
     handleChange(event) {
         const { name, value, type, checked } = event.target
@@ -35,31 +42,31 @@ export default class SubmissionForm extends Component {
             this.setState({
                 [name]: value
             })
-            let errors = this.state.errors;
-            switch(name){
-                case 'firstName':
-                    errors.firstNameError = value.length < 1 ? 'Please enter first name!':'';
-                    break;
-                case 'lastName':
-                    errors.lastNameError = value.length < 1 ? 'Please enter last name!':'';
-                    break;
-                case 'email':
-                    let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                    errors.emailError = re.test(value) ? 'Please enter a valid email address' : '';
-                    break;
-                case 'description':
-                    errors.descriptionError = value.length < 1 ? 'Please enter description!':'';
-                    break;
-                    case 'canContact':
-                    errors.checkboxError = value ? '':'Please check checkbox!';
-                    break;
-                default:
-                    break;
+            // let errors = this.state.errors;
+            // switch(name){
+            //     case 'firstName':
+            //         errors.firstNameError = value.length < 1 ? 'Please enter first name!':'';
+            //         break;
+            //     case 'lastName':
+            //         errors.lastNameError = value.length < 1 ? 'Please enter last name!':'';
+            //         break;
+            //     case 'email':
+            //         let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            //         errors.emailError = re.test(value) ? 'Please enter a valid email address' : '';
+            //         break;
+            //     case 'description':
+            //         errors.descriptionError = value.length < 1 ? 'Please enter description!':'';
+            //         break;
+            //         case 'canContact':
+            //         errors.checkboxError = value ? '':'Please check checkbox!';
+            //         break;
+            //     default:
+            //         break;
     
-            }
-            this.setState({errors,[name]:value}, () => {
-                console.log(errors)
-            })
+            // }
+            // this.setState({errors,[name]:value}, () => {
+            //     console.log(errors)
+            // })
         }
         
            
