@@ -6,7 +6,7 @@ export default function FeaturePage() {
     return (
         <div id="feature-page">
             <Header />
-            <h1 style={{color:"black", align:"center"}}>This is the FEATURE PAGE</h1>
+            <h1 style={{color:"black", align:"center"}}>This is the ALL FEATURE PAGE</h1>
         </div>
     )
 }

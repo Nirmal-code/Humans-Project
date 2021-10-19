@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display');
 
 #header {
     width:100vw;
@@ -7,6 +7,7 @@
     font-family: Red Hat Display;
     font-style: normal;
     display: inline;
+    overflow: hidden;
 }
 
 #hand-image {
@@ -15,6 +16,7 @@
     float: left;
     height: 9vh;
     width: 9vh;
+    margin-top: 0.5vh;
 }
 
 h1 {
@@ -25,19 +27,90 @@ h1 {
     line-height: 40px;
 }
 
-#header-link {
-    font-family: Red Hat Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    list-style-type: none;
-    display: inline;
-    margin-left: 10vw;
-    vertical-align: middle;
-}
-
 #links-bar {
     margin-top: 3.5vh;
     vertical-align: middle;
+}
+
+#header-link {
+    font-family: Red Hat Display;
+    font-weight: lighter;
+    display: inline;
+    font-size: 20px;
+    line-height: 24px;
+    list-style-type: none;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+    margin-left: 2vw;
+    padding: 1.2vw;
+}
+
+#feature-dropdown-menu {
+    font-family: Red Hat Display;
+    font-weight: lighter;
+    display: inline;
+    font-size: 20px;
+    line-height: 24px;
+    list-style-type: none;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+    margin-left: 3vw;
+    position: relative;
+    padding: 1.0vw;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-left: 0.5vw;
+    margin-bottom: 0.4vh;
+    vertical-align: middle;
+}
+
+#dropdown-links {
+    display: none;
+    position: relative;
+    align-self: auto;
+    text-decoration: none;
+    font-family: Red Hat Display;
+    font-weight: lighter;
+    z-index: -1;
+    padding: 0.9vh;
+    align-self:center;
+    padding-left: 1.5vw;
+    padding-top: 1.5vh;
+}
+
+#dropdown-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-family: Red Hat Display;
+    font-weight: lighter;
+    color: white;
+    font-size: 16px;
+    float: none;
+    line-height: 20px;
+    max-width: min-content;
+    padding-bottom: 1vh;
+    z-index: -1;
+}
+
+#feature-dropdown-menu:hover{
+    color: white;
+    background-color: black;
+}
+
+#feature-dropdown-menu:hover #dropdown-links {
+    display: block;
+    position: absolute;
+    background-color: black;
+    color: white;
+    z-index: 1;
 }

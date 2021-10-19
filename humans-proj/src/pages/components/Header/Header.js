@@ -4,34 +4,45 @@ import handPhoto from '../../../../static/images/SFL-humans-logo.png';
 import './Header.css'
 
 export default function Header() {
+    const activeLink = {
+        borderBottom: "2px solid #63ABFF",
+        paddingBottom: "1vh"
+    }
+
     return (
-        <div id="header">
-            <img 
+        <navbar id="header">
+            <img
                 id="hand-image"
                 src={handPhoto}
                 alt="hand-holding-SFL"
-                style={{marginLeft:"3vw"}}
+                style={{ marginLeft: "3vw" }}
             />
 
-            <h1 style={{float: "left"}}>HUMANS</h1>
+            <h1 style={{ float: "left" }}>HUMANS</h1>
 
             <div id="links-bar">
+                <li id="header-link" style={{ display: "inline" }}>
+                    <Link to="/home/Home/" id="header-link" style={{ marginLeft: "12vw" }} activeStyle={activeLink}>HOME</Link>
+                </li>
+
+                <div id="feature-dropdown-menu">
+                    FEATURED<i class="arrow"></i>
+                    <li id="dropdown-links">
+                        <Link to="/feature-page/currently-featured/" id="dropdown-link">CURRENTLY FEATURED</Link>
+                        <Link to="/feature-page/feature-page/" id="dropdown-link" style={{ marginTop:"1.5vh"}}>ALL FEATURED</Link>
+                    </li>
+                </div>
+
                 <li id="header-link">
-                    <Link to="/home/Home/">HOME</Link>
+                    <Link to="/about-page/AboutPage/" id="header-link" activeStyle={activeLink}>ABOUT</Link>
                 </li>
                 <li id="header-link">
-                    <Link to="/feature-page/feature-page/">FEATURE</Link>
+                    <Link to="/nominate-page/nominate/" id="header-link" activeStyle={activeLink}>NOMINATE</Link>
                 </li>
                 <li id="header-link">
-                    <Link to="/about-page/AboutPage/">ABOUT</Link>
-                </li> 
-                <li id="header-link">
-                    <Link to="/nominate-page/nominate/">NOMINATE</Link>
-                </li>
-                <li id="header-link">
-                    <Link to="/contact-us/contact-us/" activeStyle={{color:"red"}}>CONTACT US</Link>
+                    <Link to="/contact-us/contact-us/" id="header-link" activeStyle={activeLink}>CONTACT US</Link>
                 </li>
             </div>
-        </div>
+        </navbar>
     )
 }

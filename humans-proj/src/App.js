@@ -7,11 +7,11 @@ import Contact from './pages/contact-us/contact-us';
 function App() {
   return (
     <div className="App">
-      <Home />
+      {/* <Home />
       <AboutPage />
-      <FeaturePage />
-      <Nominate />
-      <Contact />
+      <FeaturePage /> */}
+      {/* <Nominate /> */}
+      {/* <Contact /> */}
     </div>
   );
 }
