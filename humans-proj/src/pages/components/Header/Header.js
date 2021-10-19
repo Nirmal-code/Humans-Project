@@ -22,7 +22,7 @@ export default function Header() {
 
             <div id="links-bar">
                 <li id="header-link" style={{ display: "inline" }}>
-                    <Link to="/home/Home/" id="header-link" style={{ marginLeft: "12vw" }} activeStyle={activeLink}>HOME</Link>
+                    <Link to="/home/Home/" id="header-link" style={{ marginLeft: "9vw" }} activeStyle={activeLink}>HOME</Link>
                 </li>
 
                 <div id="feature-dropdown-menu">
