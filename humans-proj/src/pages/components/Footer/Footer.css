@@ -1,0 +1,35 @@
+#wrapper {
+    height: fit-content;
+    width: fit-content;
+}
+
+#webSocialList {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    position:relative;
+    color: white;
+    float: left;
+    top: -0.5vw;
+    border-radius: 25px;
+}
+
+#webSocialList:hover {
+    color: black;
+    background-color: #fff;
+    border-radius: 25px;
+    display: inline;
+    float: left;
+}
+
+#webSocialList:hover .icon {
+    visibility: visible;
+    cursor: pointer;
+}
+
+#webSocialList .icon {
+    float: left;
+    margin-left: 0.5vw;
+    visibility: hidden;
+    display: inline;
+}
