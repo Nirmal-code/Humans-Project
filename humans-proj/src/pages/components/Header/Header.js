@@ -22,15 +22,13 @@ export default function Header() {
 
             <div id="links-bar">
                 <li id="header-link" style={{ display: "inline" }}>
-                    <Link to="/home/Home/" id="header-link" style={{ marginLeft: "12vw" }} activeStyle={activeLink}>HOME</Link>
+                    <Link to="/home/Home/" id="header-link" style={{ marginLeft: "9vw" }} activeStyle={activeLink}>HOME</Link>
                 </li>
 
                 <div id="feature-dropdown-menu">
-                    FEATURED<i class="arrow"></i>
-                    <li id="dropdown-links">
-                        <Link to="/feature-page/currently-featured/" id="dropdown-link">CURRENTLY FEATURED</Link>
-                        <Link to="/feature-page/feature-page/" id="dropdown-link" style={{ marginTop:"1.5vh"}}>ALL FEATURED</Link>
-                    </li>
+                    FEATURED<div style={{display:"inline"}}><i class="arrow"></i></div>
+                    <li><Link to="/feature-page/currently-featured/" id="dropdown-link" style={{paddingTop:"1.5vh"}}>CURRENTLY FEATURED</Link></li>
+                    <li><Link to="/feature-page/feature-page/" id="dropdown-link" style={{ marginTop: "1.5vh" }}>ALL FEATURED</Link></li>
                 </div>
 
                 <li id="header-link">
