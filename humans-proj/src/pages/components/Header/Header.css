@@ -27,9 +27,13 @@ h1 {
     line-height: 40px;
 }
 
-#links-bar {
+/* #links-bar {
     margin-top: 3.5vh;
     vertical-align: middle;
+} */
+#links-bar {
+    margin-top: 1.5vh;
+    display: inline-flex;
 }
 
 #header-link {
@@ -49,16 +53,17 @@ h1 {
 #feature-dropdown-menu {
     font-family: Red Hat Display;
     font-weight: lighter;
-    display: inline;
+    display: inline-block;
+    padding: 1.2vw;
     font-size: 20px;
     line-height: 24px;
     list-style-type: none;
-    vertical-align: middle;
     color: white;
     text-decoration: none;
     margin-left: 3vw;
     position: relative;
-    padding: 1.0vw;
+    justify-content: center;
+    max-width: min-content;
 }
 
 .arrow {
@@ -74,30 +79,25 @@ h1 {
 }
 
 #dropdown-links {
-    display: none;
-    position: relative;
-    align-self: auto;
+    position: absolute;
     text-decoration: none;
     font-family: Red Hat Display;
+    color: white;
     font-weight: lighter;
     z-index: -1;
-    padding: 0.9vh;
-    align-self:center;
-    padding-left: 1.5vw;
+    text-align: center;
     padding-top: 1.5vh;
+    min-width: min-content;
 }
 
 #dropdown-link {
-    display: block;
-    position: relative;
+    display: none;
     text-decoration: none;
     font-family: Red Hat Display;
     font-weight: lighter;
     color: white;
     font-size: 16px;
-    float: none;
     line-height: 20px;
-    max-width: min-content;
     padding-bottom: 1vh;
     z-index: -1;
 }
@@ -105,11 +105,11 @@ h1 {
 #feature-dropdown-menu:hover{
     color: white;
     background-color: black;
+    z-index: 1;
 }
 
-#feature-dropdown-menu:hover #dropdown-links {
+#feature-dropdown-menu:hover #dropdown-link {
     display: block;
-    position: absolute;
     background-color: black;
     color: white;
     z-index: 1;
