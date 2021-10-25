@@ -55,6 +55,7 @@ h1 {
     font-weight: lighter;
     display: inline-block;
     padding: 1.2vw;
+    padding-right: 1.8vw;
     font-size: 20px;
     line-height: 24px;
     list-style-type: none;
@@ -70,12 +71,13 @@ h1 {
     border: solid white;
     border-width: 0 2px 2px 0;
     display: inline-block;
-    padding: 3px;
+    padding: 4px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     margin-left: 0.5vw;
     margin-bottom: 0.4vh;
     vertical-align: middle;
+    position: fixed;
 }
 
 #dropdown-links {

@@ -26,7 +26,7 @@ export default function Header() {
                 </li>
 
                 <div id="feature-dropdown-menu">
-                    FEATURED<div style={{display:"inline"}}><i class="arrow"></i></div>
+                    FEATURED <div style={{display:"inline"}}><i class="arrow"></i></div>
                     <li><Link to="/feature-page/currently-featured/" id="dropdown-link" style={{paddingTop:"1.5vh"}}>CURRENTLY FEATURED</Link></li>
                     <li><Link to="/feature-page/feature-page/" id="dropdown-link" style={{ marginTop: "1.5vh" }}>ALL FEATURED</Link></li>
                 </div>
