@@ -10,8 +10,8 @@ import {
 export default function Footer() {
 
     const shareUrl = "https://www.softwareforlove.com/team"
-    const quote = "Take a look at some Humans."
-    const hashtag = "#softwareforlove #humans"
+    const quote = "Take a look at some Humans.\n"
+    const hashtag = "#softwareforlove #humans\n\n"
 
     return (
         <footer id="footer">
@@ -34,17 +34,17 @@ export default function Footer() {
                             style={{ width: "50px", height: "50px", paddingTop: "0.5vh" }} />
                     </li>
                     <li className="list-icon" id="facebook-icon">
-                        <FacebookShareButton id="button-icon" url={shareUrl} quote={quote} hashtag={hashtag} windowHeight={800} windowWidth={800}>
+                        <FacebookShareButton id="button-icon" url={shareUrl} quote={quote} hashtag={hashtag} windowHeight={800} windowWidth={1200}>
                             <FacebookIcon id="icon" round={true} size={50} iconFillColor="black" bgStyle={{ fill: "white" }} />
                         </FacebookShareButton>
                     </li>
                     <li className="list-icon" id="twitter-icon">
-                        <TwitterShareButton id="button-icon" url={shareUrl} title={quote} hashtag={hashtag} windowHeight={800} windowWidth={800}>
+                        <TwitterShareButton id="button-icon" url={shareUrl} title={quote} hashtag={hashtag} windowHeight={800} windowWidth={1200}>
                             <TwitterIcon id="icon" round={true} size={50} iconFillColor="black" bgStyle={{ fill: "white" }} />
                         </TwitterShareButton>
                     </li>
                     <li className="list-icon" id="whatsapp-icon">
-                        <WhatsappShareButton id="button-icon" url={shareUrl} title={quote + "\n" + hashtag} separator=" " windowHeight={800} windowWidth={800}>
+                        <WhatsappShareButton id="button-icon" url={shareUrl} title={quote + hashtag} separator=" " windowHeight={800} windowWidth={1200}>
                             <WhatsappIcon id="icon" round={true} size={50} iconFillColor="black" bgStyle={{ fill: "white" }} />
                         </WhatsappShareButton>
                     </li>
