@@ -79,7 +79,7 @@ input[type="checkbox"] {
     box-sizing: border-box;
 }
 
-button {
+#submit-button {
     height: 4.82vh;
     width: 10.74vw;
     background: #FFFFFF;

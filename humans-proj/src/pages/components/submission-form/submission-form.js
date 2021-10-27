@@ -140,7 +140,7 @@ export default class SubmissionForm extends Component {
                     </li>
 
                     <br style={{ lineHeight: "2" }} />
-                    <button onClick = {this.onClickSubmit}>SUBMIT</button>
+                    <button id="submit-button" onClick = {this.onClickSubmit}>SUBMIT</button>
                 </form>
             </div>
         )
