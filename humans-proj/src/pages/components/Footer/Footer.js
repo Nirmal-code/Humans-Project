@@ -25,14 +25,6 @@ export default function Footer() {
                     <li className="list-icon" id="share-icon" style={{ visibility: "visible", marginRight: "1.5vw", paddingTop: "0.5vh" }}>
                         <i className="fa fa-share-alt"></i>
                     </li>
-                    <li className="list-icon" id="insta-icon">
-                        <SocialIcon url="https://instagram.com"
-                            id="icon"
-                            bgColor="white"
-                            fgColor="black"
-                            target="_blank"
-                            style={{ width: "50px", height: "50px", paddingTop: "0.5vh" }} />
-                    </li>
                     <li className="list-icon" id="facebook-icon">
                         <FacebookShareButton id="button-icon" url={shareUrl} quote={quote} hashtag={hashtag} windowHeight={800} windowWidth={1200}>
                             <FacebookIcon id="icon" round={true} size={50} iconFillColor="black" bgStyle={{ fill: "white" }} />
