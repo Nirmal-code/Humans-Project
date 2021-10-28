@@ -149,7 +149,7 @@ export default class SubmissionForm extends Component {
                     </li>
                     <div style ={{fontSize:11, color:"red"}}>{this.state.errors.checkboxError}</div>
                     <br style={{ lineHeight: "2" }} />
-                    <button onClick = {this.onClickSubmit}>SUBMIT</button>
+                    <button id="submit-button" onClick = {this.onClickSubmit}>SUBMIT</button>
                 </form>
             </div>
         )

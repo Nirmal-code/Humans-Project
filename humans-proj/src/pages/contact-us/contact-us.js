@@ -3,6 +3,7 @@ import './contact-us.css';
 import SubmissionForm from '../components/submission-form/submission-form';
 import photo from '../../../static/images/contact-us-side-photo.png';
 import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 export default function Contact_Us() {
     return (
@@ -12,7 +13,7 @@ export default function Contact_Us() {
                 intro="Do you have a message, question, or concern? Contact us with the form below and our team will get in touch with you as soon as possible!"
                 image={photo}
             />
-            <footer style={{ color: "white" }}>Temporary footer</footer>
+            <Footer />
         </div>
     )
 }
