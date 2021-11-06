@@ -15,7 +15,7 @@ export default class SubmissionForm extends Component {
                 lastNameError: '',
                 emailError: '',
                 descriptionError: '',
-                checkboxError: 'Please check checkbox!',
+                checkboxError: '',
 
             }
         }
@@ -30,10 +30,8 @@ export default class SubmissionForm extends Component {
                 firstNameError : (this.state.firstName.length < 1 ? 'Please enter first name!':''),
                 lastNameError : (this.state.lastName.length < 1 ? 'Please enter last name!':''),
                 checkboxError : (this.state.canContact ? '':'Please check checkbox!'),
-                emailError : (re.test(this.state.email) ? '' : 'Please enter a valid email address'),
+                emailError : (re.test(this.state.email) ? '' : 'Please enter a valid email address!'),
                 descriptionError : (this.state.description.length < 1 ? 'Please enter description!':'')
-
-
         }});
         console.log(this.state.errors)
     }
@@ -57,7 +55,7 @@ export default class SubmissionForm extends Component {
                     break;
                 case 'email':
                     let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                    errors.emailError = re.test(value) ? '' : 'Please enter a valid email address';
+                    errors.emailError = re.test(value) ? '' : 'Please enter a valid email address!';
                     break;
                 case 'description':
                     errors.descriptionError = value.length < 1 ? 'Please enter description!':'';
@@ -103,7 +101,7 @@ export default class SubmissionForm extends Component {
                         value={this.state.firstName}
                         onChange={this.handleChange}
                     />
-                    <div style ={{fontSize:11, color:"red"}}>{this.state.errors.firstNameError}</div>
+                    <div className = "error-message">{this.state.errors.firstNameError}</div>
                     <br style={{ lineHeight: "2" }} />
 
                     <label>Last Name</label>
@@ -113,7 +111,7 @@ export default class SubmissionForm extends Component {
                         value={this.state.lastName}
                         onChange={this.handleChange}
                     />
-                    <div style ={{fontSize:11, color:"red"}}>{this.state.errors.lastNameError}</div>
+                    <div  className = "error-message">{this.state.errors.lastNameError}</div>
                     <br style={{ lineHeight: "2" }} />
 
                     <label>Email</label>
@@ -123,7 +121,7 @@ export default class SubmissionForm extends Component {
                         value={this.state.email}
                         onChange={this.handleChange}
                     />
-                    <div style ={{fontSize:11, color:"red"}}>{this.state.errors.emailError}</div>
+                    <div  className = "error-message">{this.state.errors.emailError}</div>
                     <br style={{ lineHeight: "2" }} />
 
                     <label>Description</label>
@@ -134,7 +132,7 @@ export default class SubmissionForm extends Component {
                         value={this.state.descripton}
                         onChange={this.handleChange}
                     />
-                    <div style ={{fontSize:11, color:"red"}}>{this.state.errors.descriptionError}</div>
+                    <div  className = "error-message">{this.state.errors.descriptionError}</div>
                     <br style={{ lineHeight: "2" }} />
 
                     <li style={{ listStyleType: "none" }}>
@@ -147,7 +145,7 @@ export default class SubmissionForm extends Component {
                         />
                         <label id="consent" for="can-contact-checkbox">I understand that this form is storing my submitted information so I can be contacted.</label>
                     </li>
-                    <div style ={{fontSize:11, color:"red"}}>{this.state.errors.checkboxError}</div>
+                    <div className = "error-message">{this.state.errors.checkboxError}</div>
                     <br style={{ lineHeight: "2" }} />
                     <button id="submit-button" onClick = {this.onClickSubmit}>SUBMIT</button>
                 </form>
