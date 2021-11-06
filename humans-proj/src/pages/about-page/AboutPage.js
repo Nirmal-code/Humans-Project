@@ -4,9 +4,11 @@ import "./AboutPage.css";
 import Footer from "../components/Footer/Footer";
 import photo from '../../../static/images/about-us-claybanks.png';
 import photo2 from '../../../static/images/Rectangle.png';
+import {ScrollView} from "react-native-web";
 
 export default function AboutPage() {
     return (
+        <ScrollView>
         <div id="about-page">
             <Header />
             <section className= "image-section">
@@ -59,5 +61,6 @@ export default function AboutPage() {
             </section>
             <Footer />
         </div>
+        </ScrollView>
     )
 }
