@@ -8,8 +8,8 @@ import {ScrollView} from "react-native-web";
 
 export default function AboutPage() {
     return (
-        <ScrollView>
         <div id="about-page">
+            <ScrollView>
             <Header />
             <section className= "image-section">
                 <button><h1>&lt;</h1></button>
@@ -60,7 +60,8 @@ export default function AboutPage() {
 
             </section>
             <Footer />
+            </ScrollView>
         </div>
-        </ScrollView>
+
     )
 }

@@ -1,13 +1,14 @@
 #about-page {
     background-image: url("../../../static/images/about-us-background.png");
     background-size: cover;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     min-height: 100%;
     min-width: 100%;
     width: 100%;
     height: auto;
+    overflow: auto;
 }
 
 .questions{
