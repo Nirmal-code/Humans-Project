@@ -77,7 +77,7 @@ h1 {
     margin-left: 0.5vw;
     margin-bottom: 0.4vh;
     vertical-align: middle;
-    position: fixed;
+    position: absolute;
 }
 
 #dropdown-links {
