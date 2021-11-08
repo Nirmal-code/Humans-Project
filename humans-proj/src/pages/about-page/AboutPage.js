@@ -4,18 +4,21 @@ import "./AboutPage.css";
 import Footer from "../components/Footer/Footer";
 import photo from '../../../static/images/about-us-claybanks.png';
 import photo2 from '../../../static/images/Rectangle.png';
-import {ScrollView} from "react-native-web";
 
 export default function AboutPage() {
     return (
         <div id="about-page">
-            <ScrollView>
             <Header />
             <section className= "image-section">
-                <button><h1>&lt;</h1></button>
+                <button className = "arrow-button"><h1 className = "small-arrow">&lt;</h1></button>
+                <button className = "arrow-button"><h1 className = "big-arrow">&lt;</h1></button>
+
+                <div className = "image-overlap">
                 <img className="changeable-image" src={photo} alt="" />
-                <img className="changeable-image" src={photo2} alt="" />
-                <button><h1>&gt;</h1></button>
+                <img className="box" src={photo2} alt="" />
+                </div>
+                <button className = "arrow-button"><h1 className = "small-arrow">&gt;</h1></button>
+                <button className = "arrow-button"><h1 className = "big-arrow">&gt;</h1></button>
             </section>
 
             <section className = "questions">
@@ -60,7 +63,6 @@ export default function AboutPage() {
 
             </section>
             <Footer />
-            </ScrollView>
         </div>
 
     )
