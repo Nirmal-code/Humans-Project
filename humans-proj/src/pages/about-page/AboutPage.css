@@ -1,11 +1,103 @@
 #about-page {
-    background-color: cadetblue;
+    background-image: url("../../../static/images/about-us-background.png");
     background-size: cover;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     min-height: 100%;
     min-width: 100%;
     width: 100%;
     height: auto;
+    overflow: auto;
+}
+
+.questions{
+    display:flex;
+    flex-direction: column;
+}
+.faq{
+    flex:none;
+    color: white;
+    opacity: 20%;
+    width: 50%;
+    height: auto;
+    justify-items: center;
+ 
+}
+.first-row, .second-row{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+h2{
+    font-family: Reem Kufi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5vh;
+    line-height: 5vh;
+}
+
+li{
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 2vh;
+    line-height: 3vh;
+}
+
+.image-section{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: auto;
+    justify-content:center;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+
+
+}
+.image-overlap{
+    position: relative;
+    border-width:2px;
+    width: 900px;
+    height: 600px;
+
+}
+.changeable-image{
+    width: 88%;
+    height: 83%;
+    position: absolute;
+    position: absolute;
+    left: 6%;
+    bottom: 7%;
+    z-index: 900;
+
+}
+.box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    z-index: 850;
+}
+button{
+    background: transparent;
+    border: none;
+    position: relative;
+    
+}
+
+.small-arrow{
+    color: white;
+    opacity: 70%;
+    font-size: 1.5em;
+}
+
+.big-arrow{
+    color: white;
+    font-size: 2em;
 }
