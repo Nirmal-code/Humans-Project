@@ -47,7 +47,7 @@ textarea {
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 33px;
-    margin-bottom: 3vh;
+    margin-bottom: 1vh;
 }
 
 #description-text-input {
@@ -160,4 +160,13 @@ input[type="checkbox"] {
     
     border: 1px #FFFFFF;
     box-sizing: border-box;
+}
+
+.error-message{
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    color: red;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
