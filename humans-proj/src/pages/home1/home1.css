@@ -45,7 +45,7 @@
     position: absolute;
     height: 450px;
     width: 475px;
-    margin-left:670px;
+    left:890px;
     margin-top:110px;
 }
 
@@ -53,7 +53,7 @@
     position: absolute;
     width: 392px;
     height: 359px;
-    margin-left:717px;
+    left:932px;
     margin-top: 160px;
 }
 
@@ -90,9 +90,9 @@
 #learnmore {
     position: absolute;
     width: 135px;
-    height: 35px;
-    left: 614px;
-    top: 100px;
+    height: 50px;
+    left: 700px;
+    margin-top: 550px;
 }
 
 #lmbutton{
@@ -100,6 +100,9 @@
     border-radius: 40px;
     position:absolute;
     cursor:pointer;
+    height:35px;
+    width:140px;
+    font-weight:bold;
 }
 
 #Featuredtag{
@@ -182,9 +185,9 @@
 
 #doublearrow{
     position: absolute;
-    width: 10px;
-    height: 33px;
-    margin-left: 375px;
+    width: 25px;
+    height: 29px;
+    left: 280px;
     top: 85px;
 
 }
