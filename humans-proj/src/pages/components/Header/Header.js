@@ -30,10 +30,10 @@ export default function Header() {
                     <li><Link to="/feature-page/currently-featured/" id="dropdown-link" style={{paddingTop:"1.5vh"}}>CURRENTLY FEATURED</Link></li>
                     <li><Link to="/feature-page/feature-page/" id="dropdown-link" style={{ marginTop: "1.5vh" }}>ALL FEATURED</Link></li>
                 </div>
-
+                <div style={{marginLeft: "10vw", marginTop:"1vw"}}>
                 <li id="header-link">
                     <Link to="/about-page/AboutPage/" id="header-link" activeStyle={activeLink}>ABOUT</Link>
-                </li>
+                </li></div>
                 <li id="header-link">
                     <Link to="/nominate-page/nominate/" id="header-link" activeStyle={activeLink}>NOMINATE</Link>
                 </li>
