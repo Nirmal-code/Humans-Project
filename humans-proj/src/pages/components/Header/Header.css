@@ -68,7 +68,7 @@ h1 {
     max-width: min-content;
     /* border: solid black 3px; */
     z-index: 4;
-    left: 30%;
+    left: 27%;
 }
 
 .arrow {
@@ -119,4 +119,10 @@ h1 {
     background-color: black;
     color: white;
     z-index: 1;
+}
+
+#space{
+    width: 100px; 
+    height: 25px; 
+    margin-right:0px;
 }

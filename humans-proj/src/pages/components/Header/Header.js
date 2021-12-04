@@ -25,12 +25,12 @@ export default function Header(props) {
                 <li id="header-link" style={{ display: "inline" }}>
                     <Link to="/home/Home/" id="header-link" style={{ marginLeft: "9vw" }} activeStyle={activeLink}>HOME</Link>
                 </li>
-
+                <div id="space">
                 <div id="feature-dropdown-menu">
                     FEATURED<div style={{display:"inline"}}><i class="arrow"></i></div>
                     <li><Link to="/feature-page/currently-featured/" id="dropdown-link" style={{paddingTop:"1.5vh"}}>CURRENTLY FEATURED</Link></li>
                     <li><Link to="/feature-page/feature-page/" id="dropdown-link" style={{ marginTop: "1.5vh" }}>ALL FEATURED</Link></li>
-                </div>
+                </div></div>
                 <div style={{marginLeft: "10vw", marginTop:"1vw"}}>
                 <li id="header-link">
                     <Link to="/about-page/AboutPage/" id="header-link" activeStyle={activeLink}>ABOUT</Link>
