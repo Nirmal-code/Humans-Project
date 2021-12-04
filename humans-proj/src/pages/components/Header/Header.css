@@ -34,6 +34,7 @@ h1 {
 #links-bar {
     margin-top: 1.5vh;
     display: inline-flex;
+    position: relative;
     /* border: solid black 3px; */
 }
 
@@ -63,10 +64,11 @@ h1 {
     color: white;
     text-decoration: none;
     margin-left: 3vw;
-    position: relative;
+    position: absolute;
     max-width: min-content;
     /* border: solid black 3px; */
     z-index: 4;
+    left: 30%;
 }
 
 .arrow {
