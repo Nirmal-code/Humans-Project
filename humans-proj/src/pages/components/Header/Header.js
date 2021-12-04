@@ -3,9 +3,10 @@ import { Link } from "gatsby";
 import handPhoto from '../../../../static/images/SFL-humans-logo.png';
 import './Header.css'
 
-export default function Header() {
+export default function Header(props) {
     const activeLink = {
-        borderBottom: "2px solid #63ABFF",
+        borderBottom: "2px solid",
+        borderColor: props.color,
         paddingBottom: "1vh"
     }
 
