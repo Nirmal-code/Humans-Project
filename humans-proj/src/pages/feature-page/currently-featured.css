@@ -49,7 +49,7 @@
     width:270px;
     position:absolute;
     margin-top:90.99px;
-    margin-left:35px;
+    left:330px;
 
 }
 
@@ -91,8 +91,8 @@
     border-radius: 40px;
     width:200px;
     height:50px;
-    margin-left:450px;
-    margin-top:150px;
+    left:750px;
+    margin-top:140px;
 }
 
 #born{
