@@ -131,7 +131,7 @@ export default class SubmissionForm extends Component {
                         value={this.state.firstName}
                         onChange={this.handleChange} required
                     />
-                    <div style ={{fontSize:11, color:"red"}}>{this.state.errors.firstNameError}</div>
+                    <div className = "error-message">{this.state.errors.firstNameError}</div>
                     <br style={{ lineHeight: "2" }} />
 
                     <label>Last Name</label>
@@ -142,7 +142,7 @@ export default class SubmissionForm extends Component {
                         value={this.state.lastName}
                         onChange={this.handleChange} required
                     />
-                    <div style ={{fontSize:11, color:"red"}}>{this.state.errors.lastNameError}</div>
+                    <div className = "error-message">{this.state.errors.lastNameError}</div>
                     <br style={{ lineHeight: "2" }} />
 
                     <label>Email</label>
@@ -153,7 +153,7 @@ export default class SubmissionForm extends Component {
                         value={this.state.email}
                         onChange={this.handleChange} required
                     />
-                    <div style ={{fontSize:11, color:"red"}}>{this.state.errors.emailError}</div>
+                    <div className = "error-message">{this.state.errors.emailError}</div>
                     <br style={{ lineHeight: "2" }} />
 
                     <label>Description</label>
@@ -165,7 +165,7 @@ export default class SubmissionForm extends Component {
                         value={this.state.descripton}
                         onChange={this.handleChange} required
                     />
-                    <div style ={{fontSize:11, color:"red"}}>{this.state.errors.descriptionError}</div>
+                    <div className = "error-message">{this.state.errors.descriptionError}</div>
                     <br style={{ lineHeight: "2" }} />
 
                     <li style={{ listStyleType: "none" }}>
@@ -178,7 +178,7 @@ export default class SubmissionForm extends Component {
                         />
                         <label id="consent" for="can-contact-checkbox">I understand that this form is storing my submitted information so I can be contacted.</label>
                     </li>
-                    <div style ={{fontSize:11, color:"red"}}>{this.state.errors.checkboxError}</div>
+                    <div className = "error-message">{this.state.errors.checkboxError}</div>
                     <br style={{ lineHeight: "2" }} />
                     <button id="submit-button" input type="submit" onClick = {this.onClickSubmit}>SUBMIT</button>
                 </form>
