@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display');
+
+:root {
+    --frameRotate: -3deg;
+    --imgRotate: 3deg; 
+}
+
+#container {
+    /* border: solid 3px black; */
+    width: fit-content;
+    height: fit-content;
+    display: inline-flex;
+}
+
+#subpage-info {
+    /* border: solid 3px white; */
+    display: grid;
+    overflow: auto;
+    width: 39vw;
+}
+
+#subpage-header {
+    color: white;
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    float: left;
+}
+
+#subpage-description {
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    color: #FF98B1;
+    float: left;
+    margin-top: 0%;
+}
+
+#image {
+    float: right;
+    margin-left: 15vw;
+    position: relative;
+}
+
+#picture-frame {
+    background-color: #FF98B1;
+    -webkit-transform: rotate(var(--frameRotate));
+    -ms-transform: rotate(var(--frameRotate));
+    transform: rotate(var(--frameRotate));
+    animation: rotation 0.5s linear;
+    filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.25));
+    height: 50vh;
+    width: 30vw;
+}
+
+#picture {
+    -webkit-transform: rotate(var(--imgRotate));
+    -ms-transform: rotate(var(--imgRotate));
+    transform: rotate(var(--imgRotate));
+    height: 45vh;
+    width: 25vw;
+}
+  
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(var(--frameRotate) * 2);
+        -ms-transform: rotate(var(--frameRotate) * 2);
+        transform: rotate(var(--frameRotate) * 2);
+    }
+    to {
+        transform: rotate(var(--frameRotate) * -2);
+    }
+}

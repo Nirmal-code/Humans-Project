@@ -1,11 +1,171 @@
+:root {
+    --color: #FF98B1;
+}
+
 #home-page {
-    background-color: blanchedalmond;
     background-size: cover;
-    position: fixed;
+    position: absolute;
+    display: block;
     top: 0;
     left: 0;
     min-height: 100%;
     min-width: 100%;
     width: 100%;
     height: auto;
+    transition: transform .4s ease-in-out;
+}
+
+#home-frame {
+    /* border: solid 2px black; */
+    margin-top: 2vh;
+    position: absolute;
+    display: block;
+    left: 7%;
+    height: fit-content;
+    width: min-content;
+    align-content: flex-start;
+    top: 11.6vh;
+}
+
+#play-and-pause {
+    /* border: solid 2px black; */
+    display: inline-flex;
+    position: relative;
+    margin-left: 2vw;
+}
+
+#play-and-pause-btn {
+    color: white;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+#main-page-footer {
+    margin-top: 13vh;
+    /* border: solid 2px black; */
+    display: inline-flex;
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    width: 85vw;
+    height: min-content;
+}
+
+#footer-time {
+    position: relative;
+    float: left;
+    /* border: solid 2px black; */
+    height: fit-content;
+    width: fit-content;
+}
+
+#learn-more {
+    float: right;
+    position: relative;
+    margin-left: 27rem;
+    /* margin-top: 0; */
+    /* border: solid 2px black; */
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    align-self: center;
+}
+
+#learn-more-btn {
+    border-radius: 40px;
+    background-color: white;
+    color: black;
+    line-height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.25));
+    opacity: 80%;
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#arrows {
+    position: relative;
+    display: block;
+    margin-top: 2vh;
+    height: 4.5vh;
+    margin-left: 45%;
+    margin-top: 1.5vh;
+}
+
+#slider {
+    float: right;
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+    /* border: solid 2px black; */
+    width: fit-content;
+    height: fit-content;
+}
+
+/***********  SLIDER  *************/
+.pindicator {
+    display: flex;
+    margin: auto 0;
+    width: 30rem;
+}
+
+.pindicator .bullet {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+
+.pindicator .bullet::before {
+    background-color: var(--color);
+    content: '';
+    display: block;
+    position: absolute;
+    height: .35rem;
+    top: 1.25rem;
+    margin-top: 1.1rem;
+    transform: translate3d(0,0,-1px);
+}
+
+.pindicator .bullet::before {
+    width: 100%;
+}
+
+.pindicator .bullet:first-child::before,
+.pindicator .bullet:first-child::after {
+    left: 50%;
+    width: 50%;
+}
+.pindicator .bullet:last-child::before,
+.pindicator .bullet:last-child::after {
+    width: 50%;
+}
+
+.pindicator .icon {
+    border: 2px var(--color) solid;
+    background-color: var(--color);
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: inline-block;
+    height: 1.1em;
+    width: 1.1em;
+    line-height: 2;
+    text-align: center;
+    transition: background-color .25s ease-out;
+}
+.pindicator .text {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color .25s ease-out;
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: bold;
 }

@@ -34,6 +34,7 @@ h1 {
 #links-bar {
     margin-top: 1.5vh;
     display: inline-flex;
+    /* border: solid black 3px; */
 }
 
 #header-link {
@@ -53,7 +54,7 @@ h1 {
 #feature-dropdown-menu {
     font-family: Red Hat Display;
     font-weight: lighter;
-    display: inline-block;
+    display: inline;
     padding: 1.2vw;
     padding-right: 2.4vw;
     font-size: 20px;
@@ -61,11 +62,11 @@ h1 {
     list-style-type: none;
     color: white;
     text-decoration: none;
-    position: absolute;
-    justify-content: center;
+    margin-left: 3vw;
+    position: relative;
     max-width: min-content;
-    left:40%;
-    
+    /* border: solid black 3px; */
+    z-index: 4;
 }
 
 .arrow {
@@ -82,12 +83,12 @@ h1 {
 }
 
 #dropdown-links {
-    position: absolute;
+    position: relative;
     text-decoration: none;
     font-family: Red Hat Display;
     color: white;
     font-weight: lighter;
-    z-index: -1;
+    z-index: 1;
     text-align: center;
     padding-top: 1.5vh;
     min-width: min-content;
