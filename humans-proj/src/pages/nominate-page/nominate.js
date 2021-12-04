@@ -11,6 +11,7 @@ export default function Nominate() {
             <Header />
             <SubmissionForm
                 intro="Would you like to recommend yourself or someone you know to be featured on our website? Enter your name and information below, as well as a short description of the person or group you are recommending."
+                form_name="nominate-page"
                 image={photo}
             />
             <Footer />
