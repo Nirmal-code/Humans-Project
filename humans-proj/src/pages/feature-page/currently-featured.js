@@ -4,9 +4,10 @@ import "./currently-featured.css";
 import Footer from "../components/Footer/Footer";
 import photo from '../../../static/images/cf_picture.png';
 import insta from '../../../static/images/insta_icon.png';
-import facebook from '../../../static/images/facebook_icon.jpg';
+import facebook from '../../../static/images/facebook_icon.png';
 import twitter from '../../../static/images/twitter_icon.png';
 import internet from '../../../static/images/internet_icon.png';
+
 
 export default function CurrFeaturePage() {
     return (
