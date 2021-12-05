@@ -29,14 +29,14 @@ export default function HomeFrame(props) {
     return (
         <div id="container">
             <div id="subpage-info">
-                <p id="subpage-header">{subpageInfo[props.index][0]}</p>
-                <p id="subpage-description" style={{ color: props.color }}>{subpageInfo[props.index][1]}</p>
+            <p id="subpage-header">{subpageInfo[props.index][0] || "FEATURED"}</p>
+                <p id="subpage-description" style={{ color: props.color }}>{subpageInfo[props.index][1] || "Discover this week’s featured human rights activist"}</p>
             </div>
             <div id="image">
                 <div id="picture-frame" style={{ backgroundColor: props.color }}>
                     <img
                         id="picture"
-                        src={subpageInfo[props.index][2]}
+                        src={subpageInfo[props.index][2] || featuredImg}
                         alt="welcome-photo"
                     />
                 </div>
