@@ -11,25 +11,3 @@
     width: 100%;
     height: auto;
 }
-
-h1 {
-    text-align: center;
-    color: white;
-    text-align: center;
-    font-family: Red Hat Display;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 40px;
-}
-
-footer {
-    margin-top: 85.6vh;
-    height: 7.79vh;
-    text-align: center;
-    font-family: Red Hat Display;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 40px;
-}

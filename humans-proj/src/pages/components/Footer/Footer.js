@@ -16,13 +16,13 @@ export default function Footer() {
     return (
         <footer id="footer">
             <div id="wrapper">
-                <div id="footer-text" style={{ color: "white", fontWeight: "lighter", float: "left", marginLeft: "3vw", marginRight: "1vw" }}>
+                <div id="footer-text" style={{ color: "white", fontWeight: "lighter", float: "left", marginLeft: "3vw", marginRight: "1vw"}}>
                     Let more people know about <span style={{ fontWeight: "bolder" }}>Humans</span>
                 </div>
                 <ul id="webSocialList">
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-                    <li className="list-icon" id="share-icon" style={{ visibility: "visible", marginRight: "1.5vw", paddingTop: "0.5vh" }}>
+                    <li className="list-icon" id="share-icon" style={{ visibility: "visible", paddingTop: "1.2vh" }}>
                         <i className="fa fa-share-alt"></i>
                     </li>
                     <li className="list-icon" id="facebook-icon">
