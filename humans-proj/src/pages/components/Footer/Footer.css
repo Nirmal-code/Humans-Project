@@ -1,6 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+
+#footer {
+    margin: auto 0;
+    position: absolute;
+    bottom: 0;
+}
+
+#footer-text {
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+}
+
 #wrapper {
-    height: fit-content;
-    width: fit-content;
+    padding: 0 auto;
+    height: max-content;
+    width: max-content;
+    display: inline-block;
 }
 
 #webSocialList {
