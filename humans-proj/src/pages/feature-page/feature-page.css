@@ -11,6 +11,9 @@
     overflow: auto;
 }
 
+#card-wrapper{
+    display: flex;
+}
 
 .card {
     position: absolute;
@@ -19,6 +22,7 @@
     width: 200px;
     position: relative;
     margin: auto;
+    background-color: black;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,7 +41,7 @@
 
 .card:hover .card-blur {
     opacity: 0.6;
-    background: rgba(black, 0.6)
+    background: black;
 }
 
 .footer {
@@ -60,7 +64,6 @@ svg#curve {
 .connections {
     height: 10px;
     width: 400px;
-    position: absolute;
     left: 0;
     right: 0;
     top: 350px;
@@ -85,17 +88,19 @@ svg#curve {
 }
 
 .info {
-    position: relative;
+    position: absolute;
 	z-index: 3;
 	color: white;
+    top:-330px;
 	font-family: Inconsolata;
     padding-left: 20px;
-    transform: translateY(250px);
+    margin-bottom: 20%;
+    visibility: hidden;
     transition: transform 1s cubic-bezier(.31,1.21,.64,1.02);
 }
 
 .card:hover .info {
-    transform: translateY(0px);
+    visibility: visible;
 }
 
 .name {
@@ -103,19 +108,36 @@ svg#curve {
     padding-top: 5px;
 }
 
-.connection.facebook {
+
+.fa {
     height: 35px;
     width: 35px;
     margin-left: 20px;
     padding: 0px;
     border-radius: 100%;
     overflow: hidden;
-}
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
 
-.connection.twitter {
-    transition-delay: 0.06s;
-}
-
+/* 
 .connection.behance {
     transition-delay: 0.12s;
 }
@@ -125,16 +147,15 @@ svg#curve {
     width: 100%;
     background-position: center;
     background-size: cover;
-    background-color: black;
+    background-color: white;
 }
 
 .connection.twitter .icon {
-    height: 18px;
-    width: 18px;
-    margin-top: 4px;
-    margin-left: 4px;
+    height: 100%;
+    width: 100%;
     background-position: center;
     background-size: cover;
+    background-color: white;
 }
 
 .connection.behance .icon {
@@ -144,4 +165,4 @@ svg#curve {
     margin-left: 4px;
     background-position: center;
     background-size: cover;
-}
+} */
